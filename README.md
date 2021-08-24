@@ -1,27 +1,49 @@
 # GraficasApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
+[Gracias a Fernando Herrera por este curso](https://www.udemy.com/course/angular-fernando-herrera/learn/lecture/24268034#questions)
 
-## Development server
+En esta App veremos un ejemplo de manejo de gráficas hechas con [ng2-charts](https://valor-software.com/ng2-charts/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Gráficas dinámicas
+- Gráficas de Barra y Dona
+- Re-dibujar valores de gráfica
+- Gráficas basadas en peticiones HTTP
+- Componentes especializados para la re-utilización de gráficas
 
-## Code scaffolding
+## Instalación de ng2-charts
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Instalar paquete
 
-## Build
+``` code
+npm install --save ng2-charts
+npm install --save chart.js
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Usar API
 
-## Running unit tests
+``` code
+ import { ChartsModule } from 'ng2-charts';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ // In your App's module:
+ imports: [
+   ChartsModule
+ ]
+```
 
-## Running end-to-end tests
+### Instalar json-server
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para el ejemplo de `Dona http` utilizaremos [json-server](https://www.npmjs.com/package/json-server) como servidor backend
 
-## Further help
+``` code
+ npm i json-server
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+
+### Iniciar json-server
+
+Debemos ubicarnos el el directorio database y ejecutar el siguiente comando:
+
+``` code
+ npm i json-server
+
+```
